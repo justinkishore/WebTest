@@ -1,0 +1,6 @@
+C:\Users\Kishore\Desktop\WebApplicationTest\WCFServiceApp\bin\WCFServiceApp.dll.config
+C:\Users\Kishore\Desktop\WebApplicationTest\WCFServiceApp\bin\WCFServiceApp.dll
+C:\Users\Kishore\Desktop\WebApplicationTest\WCFServiceApp\bin\WCFServiceApp.pdb
+C:\Users\Kishore\Desktop\WebApplicationTest\WCFServiceApp\obj\Debug\WCFServiceApp.csprojResolveAssemblyReference.cache
+C:\Users\Kishore\Desktop\WebApplicationTest\WCFServiceApp\obj\Debug\WCFServiceApp.dll
+C:\Users\Kishore\Desktop\WebApplicationTest\WCFServiceApp\obj\Debug\WCFServiceApp.pdb
