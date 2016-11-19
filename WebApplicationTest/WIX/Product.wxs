@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="WebWIXSetup" Language="1033" Version="1.0.0.0" Manufacturer="KishoreConnect.com" UpgradeCode="f60f2343-f40a-4102-9cf2-b077a2271c54">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+<Media Id="1" Cabinet="Web.cab" EmbedCab="yes" />
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+	
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLLOCATION" />
+    
+    <Directory Id="TARGETDIR" Name="SourceDir">
+            <!-- Install stuff into program files folder. -->
+            <Directory Id="ProgramFilesFolder">
+                <!-- In program files create folder with name MyWeb. -->
+                <Directory Id="INSTALLLOCATION" Name="MyWeb">
+                    <!-- This is the folder where the website content will be located --> 
+                    <Directory Id="MYWEBWEBSITE" Name="Website">
+                        <!-- Continue in DirectoryRef with specific name -->
+                    </Directory>
+                    <!-- Here you can add another directories -->
+                </Directory>
+            </Directory>
+        </Directory>
+
+    <Feature Id="Complete"
+             Title="MyWeb - My awesome web"
+             Level="1"
+             Display="expand"
+             ConfigurableDirectory="INSTALLLOCATION">
+             
+             <!-- Main content of the Complete feature. -->
+            <Feature Id="MainContent"
+                     Title="MyWeb Website"
+                     Description="The website content"
+                     Level="1">
+                
+                                
+                <!-- Include web content. -->
+                <ComponentGroupRef Id="MyWebWebComponents" />
+                
+
+            </Feature>
+        </Feature>
+    
+		
+	</Product>
+
+	
+</Wix>
